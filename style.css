@@ -1,0 +1,175 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    background-color: hsl(0, 0%, 100%);
+
+    border-radius: 7px;
+    width: 550px;
+    height: 400px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.text {
+    width: 50%;
+    height: 100%;
+
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.text-box {
+    padding: 0px 10px 0px 30px;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+
+    /* border: 5px solid black; */
+
+    margin: 30px 0px 10px;
+    
+}
+
+h2 {
+    color: hsl(212, 21%, 14%);
+
+    font-family: 'Fraunces';
+    font-weight: bolder;
+    font-size: 32px;
+
+    padding: 12px 10px 0px 0px;
+    margin-bottom: 10px;
+
+    /* border: 1px solid black; */
+}
+
+.description {
+    color: hsl(228, 12%, 48%);
+    
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    
+    line-height: 20px;
+    padding: 10px 0px;
+
+    word-spacing: 3px;
+}
+
+.prices {
+    align-items: center;
+    white-space: nowrap;
+    padding: 5px 0px;
+    margin: 5px 0px;
+}
+
+.prices > p {
+    display: inline-block;
+}
+
+.actual_price {
+    color: hsl(158, 36%, 37%);
+    
+    font-family: 'Fraunces';
+    font-size: 28px;
+
+    padding-right: 15px;
+}
+
+.original_price {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.add_to_cart_button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+
+    height: 50px;
+    /* width: 100%; */
+    margin: 20px 10px 0px 0px;
+    position: relative;
+    transition: 100ms;
+}
+
+.add_to_cart_button:hover {
+    background-color: hsl(158, 36%, 27%);
+    cursor: pointer;
+}
+
+.button_elements {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+
+    left: 0;
+    right: 0;
+}
+
+.button_elements p {
+    color:  hsl(0, 0%, 100%);
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.button_elements img {
+    padding: 0 5px;
+}
+
+.button_elements * {
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Montserrat';
+}
+
+footer a {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+}
